@@ -1,0 +1,22 @@
+{
+    "name": "wallet",
+    "version": "1.0.0",
+    "author": "Me",
+    "description": "A wallet served from a REST API",
+    "contributors": [{
+        "name": "Me",
+        "email": "me@flac.io"
+    }],
+    "scripts": {
+        "preinstall": "npm install -g jslint"
+    },
+    "main": "./lib/wallet.js",
+    "repository": {},
+    "dependencies" : {
+        "redis" : "0.12.x",
+        "restify" : "3.0.x"
+    },
+    "engines": {
+        "node": ">=0.12"
+    }
+}

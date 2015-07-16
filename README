@@ -1,0 +1,43 @@
+Preparations
+------------
+1. install node (>= 0.12.x)
+2. install redis (>= 3.0.x)
+3. execute `redis-server`
+
+
+
+Full build
+----------
+$ make
+
+
+
+Update build
+------------
+$ make update
+
+
+
+Start server
+------------
+$ make run
+
+
+
+Examples
+--------
+
+INSERT item1 INTO WALLET
+$ curl -v -X PUT -d '1' localhost:8080/v1/wallet/me/item1
+
+INSERT item2 INTO WALLET
+$ curl -v -X PUT -d '2' localhost:8080/v1/wallet/me/item2
+
+UPDATE item1 IN WALLET
+$ curl -v -X PUT -d '1.1' localhost:8080/v1/wallet/me/item1
+
+RETRIEVE item1 FROM WALLET
+$ curl -v localhost:8080/v1/wallet/me/item1
+
+RETRIEVE FULL WALLET
+$ curl -v localhost:8080/v1/wallet/me
